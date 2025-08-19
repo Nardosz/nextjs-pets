@@ -55,14 +55,14 @@ const chatLogElement =useRef(null)
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({message: userMessege,socket_id: socketId})
+            body: JSON.stringify({message: userMessege.trim(),socket_id: socketId})
           })
           setMessegeLog(prev => [...prev, {selfMessage: true, messege: userMessege}])
           setUserMessege
     }
 
     function handleInputChange(e) {
-        setUserMessege(e.target.value.trim())
+        setUserMessege(e.target.value)
     }
 
 return (

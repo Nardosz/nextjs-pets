@@ -645,7 +645,7 @@ textarea.form-field {
   background-color: #f1f1f1;
 }
 
-/* Chat related CSS*/
+/* Chat Related CSS */
 .open-chat {
   z-index: 85;
   position: fixed;
@@ -670,21 +670,20 @@ textarea.form-field {
   right: 20px;
   width: 290px;
   height: 420px;
-  border-radius: 18px;
-  background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
   display: flex;
   flex-direction: column;
   transform: translateY(100%);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0.3s ease-out;
+  transition: opacity .3s ease-out, transform .3s ease-out, visibility .3s ease-out
 }
 
 .chat-container--visible {
   opacity: 1;
-  transform: translateY(0);
   visibility: visible;
+  transform: translateY(0);
 }
 
 .chat-log {
@@ -698,7 +697,6 @@ textarea.form-field {
   background-color: #5061F6;
   color: white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -711,38 +709,38 @@ textarea.form-field {
 
 .chat-title-bar svg {
   position: relative;
+  top: 3px;
 }
 
-.chat-messege {
+.chat-message {
   margin: 0 60px 5px 0;
   display: flex;
 }
 
-.chat-messege-inner {
+.chat-message-inner {
   background-color: #AFAFAF;
-  color: #fff;
+  color: white;
   padding: 10px 14px;
-  border-radius: 10px;
+  border-radius: 16px;
   font-size: .85rem;
 }
 
-.chat-messege--self .chat-messege-inner {
+.chat-message--self .chat-message-inner {
   background-color: #3653F6;
 }
 
-.chat-messege--self {
+.chat-message--self {
   justify-content: flex-end;
-  margin: 00 5px 60px;
+  margin: 0 0 5px 60px;
 }
 
 .chat-container input {
-  border: none;
-  outline: none;
+  width: 100%;
+  padding: 10px;
   box-sizing: border-box;
+  border: none;
   font-family: inherit;
   font-size: .85rem;
-  padding: 10px;
-  width: 100%;
   outline: none;
   border-top: 1px solid #e6e6e6;
 }
@@ -753,8 +751,8 @@ textarea.form-field {
   right: 0;
   background-color: red;
   color: white;
-  padding: 2px 5px;
   border-radius: 20px;
-  font-size: .75rem;
+  padding: 2px 4px;
   line-height: 1;
+  font-size: .75rem;
 }

@@ -10,7 +10,7 @@ export default function Footer(props) {
     if (props.isAdmin) {
       return (
         <>
-          <Chat/>
+          <Chat />
           <p className="logout-text">
             <a href="" onClick={handleClick}>
               Logout
